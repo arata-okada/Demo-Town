@@ -1,0 +1,531 @@
+@charset "utf-8"
+
+/* リセットcss */
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+  margin: 0px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: .4rem;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+}
+
+@charset "utf-8";
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+   font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+.section-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+img{
+    display: block;
+    width: 100%;
+    z-index: -999;
+}
+.wrap{
+    width: 80%;
+    margin: 0 auto 50px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.between{
+    justify-content: space-between;
+}
+.around{
+    justify-content: space-around;
+}
+.center{
+    justify-content: center;
+}
+
+/* top */
+.bg-slider{
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+}
+.bg-slider div{
+    margin: 10% 10%;
+}
+.bg-slider__title{
+    font-size: 90px;
+    font-weight: 100;
+    letter-spacing: .4rem;
+}
+.bg-heading{
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: .2rem;
+    line-height: 1.5;
+}
+
+/* ボックス */
+.box{
+    width: 50%;
+    height: 100%;
+    background: rgba(228, 228, 228, 0.45);
+    box-sizing: border-box;
+    padding: 56px;
+    z-index: 10;
+}
+.right-box{
+    background-color: rgb(243, 243, 243);
+}
+.image-box{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+/* ボックス内コンテンツ */
+.number{
+    font-size: 90px;
+    margin: 0;
+}
+.box-title{
+    font-size: 60px;
+    margin: 2rem 0;
+}
+.demo-text{
+    font-size: 40px;
+    margin: 1rem 0;
+
+}
+.demo-content{
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* topへ戻るボタン */
+#top-btn{
+    background: rgba(49, 49, 49, 0.8);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+/* cow */
+.cow{
+    background: url(../images/annie-spratt-JMjNnQ2xFoY-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/* farmer */
+.farmer{
+    width: 100%;
+    height: 1000px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.farmer img{
+    width: 530px;
+    height: auto;
+}
+.farmer-image__first{
+    z-index: -1;
+}
+.farmer-image__second{
+    position: absolute;
+    left: 15%;
+    top: 32%;
+    z-index: 0;
+}
+.farmer-image__third{
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    z-index: 1;
+}
+
+
+/* nature */
+.nature{
+    background: url(../images/evi-t-fQ9X2rPEwq8-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 1000px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/* milk */
+.milk{
+    width: 100%;
+    height: 1000px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.image-box__left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.image-box__right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 370px;
+}
+.milk-image_height_first{
+    width: 360px;
+    height: auto;
+    margin: 0 0 10px 0;
+}
+.milk-image-height_second{
+    width: 360px;
+    height: auto;
+}
+.milk-image-height_third{
+    width: 360px;
+    height: auto;
+    margin: auto 0 10px 0;
+}
+.milk-image-height_fourth{
+    width: 360px;
+    height: auto;
+}
+
+/* vegetable */
+.vegetable{
+    background: url(../images/thomas-le-pRJhn4MbsMM-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 1000px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/* sub */
+.sub-container{
+    width: 100%;
+    padding: 240px 0 0;
+    box-sizing: border-box;
+}
+.sub-box{
+    width: 33.3333%;
+    padding: 0 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.imgWrap {
+    overflow: hidden;
+    width: 100%; /*拡大時にはみ出た部分を隠す*/
+}
+.imgWrap img {
+    display: block;
+	transition-duration: 2s;	/*変化に掛かる時間*/
+}
+.imgWrap img:hover {
+    transform: scale(1.2);	/*画像の拡大率*/
+    transition-duration: 2s;	/*変化に掛かる時間*/
+}
+.sub-title {
+    font-size: 40px;
+}
+
+/* detail */
+.detail-title{
+    text-align: center;
+    margin: 0 0 160px 0;
+}
+.detail-title h1{
+    margin: 0;
+    padding: 240px 0 0 0;
+    font-size: 90px;
+    font-weight: 100;
+    letter-spacing: .4rem;
+}
+.detail ul{
+    padding: 0;
+}
+.detail li{
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0 0 64px 0;
+    padding: 0 20px;
+}
+.detail-overview{
+    margin-bottom: 120px;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    margin-bottom: 16px;
+}
+a{
+    color: #000;
+}
+
+/* hamburger非表示 */
+.menu-content,
+#hamburger{
+    display: none;
+}
+
+/* フェイドイン */
+.fadein{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+}
+
+
+/* レスポンシブ　タブレット */
+@media screen and (max-width: 960px){
+    .box{
+        width: 80%;
+        height: 100%;
+        text-align: center;
+    }
+    .cow,
+    .farmer,
+    .nature,
+    .milk,
+    .vegetable{
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+    }
+    .image-box{
+        display: none;
+    }
+    .right-box{
+        background: rgba(228, 228, 228, 0.45);
+    }
+    .farmer{
+        background: url(../images/peasant-452904_1920.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    .milk{
+        background: url(../images/carissa-gan-YlwOMESLPQo-unsplash.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    .sub-box{
+        width: 90%;
+        margin: 0 auto 80px;
+    }
+    .detail-overview{
+        margin-bottom: 40px;
+    }
+    
+
+    /* humburger */
+    #hamburger{
+        /* displayを必ずnoneにする */
+        display: none;
+        width: 40px;
+        height: 40px;
+        /* positionをfixedにする */
+        position: fixed;
+        cursor: pointer;
+        z-index: 100;
+        top: 20px;
+        right: 0;
+        /* jQueryで秒数を決めるためtransitionは消す */
+        background: rgba(49, 49, 49, 0.8);
+        padding: 10px 20px;
+    }
+    #hamburger span{
+        position: absolute;
+        left: 22px;
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: #fff;
+        transition: .8s;
+    }
+    #hamburger span:nth-of-type(1){
+        top: 20px;
+    }
+    #hamburger span:nth-of-type(2){
+        top: 30px;
+    }
+    #hamburger span:nth-of-type(3){
+        top: 40px;
+    }
+    .hamburger.active span:nth-of-type(1){
+        top: 30px;
+        transform: rotate(45deg);
+    }
+    .hamburger.active span:nth-of-type(2){
+        opacity: 0;
+    }
+    .hamburger.active span:nth-of-type(3){
+        top: 30px;
+        transform: rotate(-45deg);
+    }
+    
+    /* menu-content */
+    .menu-content{
+        display: block;
+    }
+    .menu-content .menu-title{
+        margin: 40px 20px;
+        font-size: 3rem;
+        color: #333333;
+        text-align: center;
+        font-weight: bold;
+    }
+    .menu-content{
+        width: calc(100% - 80px);
+        height: 100%;
+        text-align: center;
+        transition: .2s;
+        position: fixed;
+        top: 0;
+        left: calc(-100% - 80px);
+        z-index: 999;
+        background: #fff;
+        color: #333333;
+        box-shadow: 80px 0 rgba(38, 98, 213, 0.3);
+    }
+    .menu-content li a{
+        font-size: 1.6rem;
+        color: #333333;
+        margin: 30px 0 0;
+        padding: 5px;
+        border-bottom: 0.5px solid #2662D5;
+        text-decoration: none;
+        display: block;
+    }
+    .menu-content li{
+        width: 100%;
+        text-align: left;
+    }
+    .menu-content.open{
+        left: 0;
+    }    
+}
+
+@media screen and (max-width: 560px){
+    .box{
+        width: 100%;
+    }
+
+}
